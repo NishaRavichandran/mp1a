@@ -19,9 +19,9 @@ class csv{
         $make = 'Hyundai';
         $model = 'I10';
         $car = AutomobileFactory::create($make, $model);
-        print_r($car);
+        //print_r($car);
 
-        return $records;
+        return $car;
     }
 }
 
@@ -34,7 +34,7 @@ class html{
     }}
 class system{
     Static public function printPage($page) {
-        echo $page;
+        print_r($page);
     }
 }
 class Automobile
@@ -47,6 +47,8 @@ class Automobile
         $this->vehicleMake = $make;
         $this->vehicleModel = $model;
     }
+
+
 
     public function getMakeAndModel()
     {
